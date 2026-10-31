@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de países</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="cabecera">
+        <h1>Buscador de países</h1>
+        <p>Busca un país, guárdalo en favoritos y ordénalos por población</p>
+    </header>
+
+    <main class="contenido">
+
+        <section class="buscador" aria-labelledby="titulo-buscador">
+
+            <h2 id="titulo-buscador">Buscar</h2>
+
+            <form id="form-busqueda">
+                <input type="text" id="input-pais" placeholder="Nombre del pais (en ingles)" required>
+                <button type="submit" id="btn-buscar">Buscar</button>
+            </form>
+
+            <div id="resultado-busqueda" aria-live="polite"></div>
+
+        </section>
+
+        <aside class="favoritos" aria-labelledby="titulo-favoritos">
+
+            <div class="favoritos-cabecera">
+                <h2 id="titulo-favoritos">Favoritos</h2>
+                <button id="btn-ordenar">Ordenar por población</button>
+            </div>
+
+            <p id="sin-favoritos">Todavía no has añadido ningún país.</p>
+
+            <ul id="lista-favoritos"></ul>
+
+        </aside>
+
+    </main>
+
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
